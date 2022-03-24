@@ -40,7 +40,7 @@ article:nth-child(4){
     background-color: var(--second-color);
 }
 .card__img{
-    width: 280px;
+    width: 200px;
     height: auto;
     padding: 50px;
     transition: .5s;
