@@ -1,0 +1,85 @@
+<div class="topnav">
+  <div class="container-nav" >
+    <a href="/"> NJIT</a>
+    <div class="topnav-right">
+      <a href="/users/login">Log In</a>
+      <a class="active" href="/users/register">Register</a>
+    </div>
+    
+  </div>
+</div>
+
+<body>
+   <div class="container-1">
+     
+      <div class="content">
+
+
+<%- include ('./error/messages') %>
+<form id="form" action="/users/register" method="POST" name="signIn" class="needs-validation" novalidate oninput='confirmpassword.setCustomValidity(confirmpassword.value != password.value ? "Passwords do not match." : "")'>
+<h1>Register</h1>
+  <div class="form-group">
+    <label for="name" class="form-label">Name</label>
+    <input
+      type="name"
+      class="form-control"
+      id="exampleInputEmail1" 
+      aria-describedby="emailHelp"
+      name="name"
+      placeholder="Enter Name"
+      pattern="^(?=.*[A-Za-z]).{8,}$" required
+      value="<%= typeof name != 'undefined' ? name : '' %>"
+    />
+    <div class="invalid-feedback">Please enter a valid 8 Character Username!</div>
+</div>
+<div>
+    <label for="email" class="form-label">Email</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email" 
+      aria-describedby="emailHelp"
+      name="email"
+      placeholder="Enter Email" required
+      value="<%= typeof email != 'undefined' ? email : '' %>"
+    />
+    <div class="invalid-feedback">Please enter a valid Email Address!</div>
+  </div>
+  <div class="form-group">
+    <label for="password" class="form-label">Password</label>
+    <input
+      type="password"
+      name="password"
+      class="form-control"
+      placeholder="Create Password"
+      id="password"
+      pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}$" required
+      value="<%= typeof password != 'undefined' ? password : '' %>"
+    />
+    <div class="invalid-feedback"></div>
+  </div>
+  <div class="form-group">
+    <label for="password2" class="form-label">Confirm Password</label>
+    <input
+      type="password"
+      name="password2"
+      class="form-control"
+      id="confirmpassword"
+      placeholder="Confirm Password"
+      pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,}$" required
+      value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+    />
+    <div class="invalid-feedback">Passwords should match and be atleast 8 characters with lowercase, uppercase and symbols.</div>
+  </div>
+  <a href="/users/login"><button type="submit" class="btn btn-primary btn-block">
+    Register
+  </button></a>
+  <hr class="solid1">
+          <div class="Sign-Up-Text">
+            <p >Have An Account? <a href="/users/login" class="btn btn-primary btn-block">Login</a></p>
+            <p > <a href="/" class="btn btn-primary btn-block">Go to Landing Page</a></p>
+            
+          </div>
+</form>
+</div>  
+</div> 

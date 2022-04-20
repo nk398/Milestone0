@@ -1,0 +1,63 @@
+  <div class="topnav">
+    <div class="container-nav" >
+      <a href="/">NJIT</a>
+      <div class="topnav-right">
+        <a  href="/users/login">Log In</a>
+        <a href="/users/register">Register</a>
+      </div>
+      
+    </div>
+  </div>
+<body>   
+   <div class="container-1">
+     
+      <div class="content">
+
+
+
+<form id="form" action="/users/login" method="POST" name="signIn" class="needs-validation" novalidate style="text-align: center;">
+  <h1> Login </h1>
+  <%- include ('./error/messages') %>
+  <div class="form-group">
+<label for="email">Email</label>
+<input
+type="email"
+name="email"
+class="form-control"
+
+aria-describedby="emailHelp"
+placeholder="Enter Email" required
+/>
+
+</div>
+<div class="form-group">
+    <label for="password">Password</label>
+    <input
+      type="password"
+      name="password"
+      class="form-control" 
+      placeholder="Enter Password" required
+    />
+    <div id="pwMessage1" class="invalid-feedback">Incorrect Email or Password!</div>
+  
+</div>
+<button type="submit" class="btn btn-primary btn-block">Login</button>
+
+<hr class="solid">
+          <div >
+            Don't have an account?
+            <a href="/users/register" class="btn btn-primary btn-block">Sign Up</a>
+          </div> 
+   
+</form>
+</div>
+</div>
+</body>
+
+
+
+
+
+
+
+
