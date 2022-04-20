@@ -1,4 +1,3 @@
-
 INTEGRATION:
 ---------------
 
@@ -17,12 +16,12 @@ Within the <body> </body> section :
 <div w3-include-html="file1.html"></div>
 <div w3-include-html="file2.html"></div>
 
-<!-----------  Integrate html files with Jquery ---->
+<!-----------  Integrate html files with JavaScript ---->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<div class="DivId"></div>
+<div id="DivId"></div>
 <script type="text/javascript">
   $(function(){
-    $(".DivID").load("file3.html");
+    $("#DivID").load("file3.html");
   });
 </script> 
 
