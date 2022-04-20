@@ -28,7 +28,14 @@
 
 <body>
 
-<div w3-include-html="events.html"></div>
+<!---------Events Update -------------------->
+<div id="EventsDiv"></div>
+<script type="text/javascript">
+  $(function(){
+    $("#EventsDiv").load("events.html");
+  });
+</script>
+<!-------------------------------------------->
 <div w3-include-html="header.html"></div> 
 <div w3-include-html="menubar.html"></div> 
 <div w3-include-html="sports-news.html"></div>
