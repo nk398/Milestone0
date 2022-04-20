@@ -1,7 +1,7 @@
 /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #181c4c;
   font-family: Arial;
 }
 
@@ -33,9 +33,9 @@
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a black background color to navbar links on hover */
+/* Add a navy blue background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: black;
+  background-color: #181c4c;
 }
 
 /* Dropdown content (hidden by default) */
