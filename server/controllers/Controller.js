@@ -8,7 +8,7 @@ const Thoughts = require('../models/Thoughts');
 */
 exports.homepage = async(req, res) => {
   try {
-    const limitNumber = 5;
+    const limitNumber = 6;
     const Archives = await Category.find({}).limit(limitNumber);
     const latest = await Thoughts.find({}).sort({_id: -1}).limit(limitNumber);
     
