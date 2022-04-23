@@ -1,0 +1,79 @@
+
+
+<!-- Archives Start -->
+
+
+<div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-4 carousel">
+
+
+  <% if(Archives != '') { %>
+    <% Archives.forEach(function(Archives, index) { %>
+      <a href="/" class="col text-center Archives__link">
+        <div class="Archives__img shadow">
+          <img src="img/<%- Archives.image %>" alt="<%- Archives.name %>" loading="lazy">
+        </div>
+        <div class="pt-1"><%- Archives.name %></div>
+        <div class="pt-1"><%- Archives.description %></div>
+      </a>
+    <% }) %>
+  <% } %>
+
+
+
+</div>
+<!-- Archives End -->
+
+
+<!-- Latest Start -->
+
+<section class="pb-4 pt-4" style="margin-top: 20%;">
+  <div class="d-flex mb-2 align-items-center">
+    <h2>Latest Thoughts/Feedback</h2>
+  
+  </div>
+
+  <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+
+    <% if(thoughts != '') { %>
+      <% thoughts.latest.forEach(function(Thoughts, index){ %>
+      <a href="/" class="col text-center Archives__link">
+        <div class=" Archives">
+        </div>
+        <div class="pt-1"><%= Thoughts.name %></div>
+      </a>
+      <% }) %>
+    <% } else { %>
+      <p>No items found.</p>
+    <% } %>
+  </div>
+
+</section>
+<!-- Latest End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Submit - Start -->
+<section class="px-4 py-5 my-5 text-center">
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Publish your Thoughts in front of thousands of people </p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <a href="/submit-Thoughts" class="btn btn-primary btn-dark btn-lg">Submit Thoughts</a>
+    </div>
+  </div>
+</section>
+ 
+<!-- Submit - End -->
