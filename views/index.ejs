@@ -1,0 +1,101 @@
+
+<!-- Archives Start -->
+<H2 style="text-align: center;">View Archives</H2>
+
+<div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3 py-4 ">
+
+
+  <% if(Archives != '') { %>
+    <% Archives.forEach(function(Archives, index) { %>
+      <a href="/" class="col text-center Archives__link">
+        <div class="Archives__img shadow">
+          <img src="img/<%- Archives.image %>" alt="<%- Archives.name %>" loading="lazy">
+        </div>
+        <div class="pt-1"><%- Archives.name %></div>
+        <div class="pt-1"><%- Archives.description %></div>
+      </a>
+    <% }) %>
+  <% } %>
+
+
+
+</div>
+<!-- Archives End -->
+
+
+<!-- Latest Start -->
+
+<section class="pb-4 pt-4" style="margin-top: 20%;">
+  <div class="d-flex mb-2 align-items-center">
+    <h2>Latest Thoughts</h2>
+  </div>
+
+  <div  style="text-align: center;">
+
+    <% if(thoughts != '') { %>
+      <% thoughts.latest.forEach(function(Thoughts, index){ %>
+        <div class=" Archives">
+        </div>
+        <div class="pt-1" style="font-size:30px;"><%= Thoughts.description %></div>
+      </a>
+      <% }) %>
+    <% } else { %>
+      <p>No items found.</p>
+    <% } %>
+  </div>
+
+</section>
+<!-- Latest End -->
+
+
+
+<!-- Submit - Start -->
+<section class="px-4 py-5 my-5 text-center">
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Publish your Thoughts in front of thousands of people </p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <a href="/submit-Thoughts" class="btn btn-primary btn-dark btn-lg">Submit Thoughts</a>
+    </div>
+    
+  </div>
+</section>
+ 
+<!-- Submit - End -->
+<div class="w3-center w3-margin" >
+  <a href="https://www.varsity.com/">
+  <img class="w3-image w3-border" src="https://raw.githubusercontent.com/nk398/Milestone0/main/Priti-Demo-M0/Priti-Demo-M0/adsense/varsityad.png" width="900px" style="display: block;margin-left: auto;
+    margin-right: auto; top:100px" alt=""></a>
+  
+  </div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2537598273745488"
+     crossorigin="anonymous"></script>
+<!-- sports -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2537598273745488"
+     data-ad-slot="5711730759"
+     data-ad-format="auto"
+     
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- ChatBot end -->
+
+<!-- Chat Bot - Start -->
+<!-- Start of ChatBot (www.chatbot.com) code -->
+<script type="text/javascript">
+  window.__be = window.__be || {};
+  window.__be.id = "6264d04fb7f91f0007655dbb";
+  (function() {
+      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+  })();
+</script>
+<!-- End of ChatBot code -->
+<!-- End of ChatBot code -->
+<!-- End of ChatBot code -->
+
+<!-- Chat Bot - Start -->
