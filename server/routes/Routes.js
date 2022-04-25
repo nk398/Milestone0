@@ -9,7 +9,7 @@ router.get('/', Controller.homepage);
 
 router.get('/submit-Thoughts', Controller.submitThoughts);
 router.post('/submit-Thoughts', Controller.submitThoughtsOnPost);
-
+router.get('/faqs', Controller.faqs);
 
  
 module.exports = router;
