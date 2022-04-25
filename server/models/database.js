@@ -11,5 +11,5 @@ db.once('open', function(){
 require('./Archives');
 require('./Thoughts');
 require('./Countdown');
-
+require('./faqs')
 
