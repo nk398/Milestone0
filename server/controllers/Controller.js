@@ -1,6 +1,7 @@
 require('../models/database');
 const Category = require('../models/Archives');
 const Thoughts = require('../models/Thoughts');
+const Faqs = require('../models/faqs');
 /**
  * GET /
  * Homepage 
@@ -23,8 +24,18 @@ exports.homepage = async(req, res) => {
  * GET /chatbot
  * Submit Thoughts
 */
+exports.faqs = async(req, res) => {
+
+  const limitNumber = 3;
+    const faqs = await Faqs.find({}).limit(limitNumber);
+
+  res.render('faqs.ejs', { title: 'NJIT HIGHLANDER - FAQS',faqs  } );
+}
 
 
+
+
+/**
 
 /**
  * GET /submit-Thoughts
@@ -35,6 +46,7 @@ exports.submitThoughts = async(req, res) => {
   const infoSubmitObj = req.flash('infoSubmit');
   res.render('submit-Thoughts', { title: 'NJIT HIGHLANDER - Submit Thoughts', infoErrorsObj, infoSubmitObj  } );
 }
+
 
 /**
  * POST /submit-Thoughts
@@ -158,6 +170,21 @@ exports.submitThoughtsOnPost = async(req, res) => {
  //   console.log('err', + error)
  // }
 //}
+
+
+ //async function insertDymmyfaqsData(){
+ // try {
+//await faqs.insertMany([
+ //{
+ // "question":"why?",
+ // "answer" :"This"
+ //   },
+ // ]);
+ // } catch (error) {
+ //   console.log('err', + error)
+//}
+//}
+//insertDymmyfaqsData();
 
 //insertCountdownData();
  //async function insertDymmyCountdownData(){
