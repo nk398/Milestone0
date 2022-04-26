@@ -1,0 +1,160 @@
+
+html, body {
+    height: 100%;
+    background-color: #fff; /* changed from #F4F4F4*/
+    }
+
+    body {
+     
+        font-family:  'Roboto', sans-serif;    
+    }
+
+.Rectangle_50{
+    width: 55%;
+    height: 9%;
+    background: #101D49;
+    border-radius: 10px;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.Star_Player_of_the_Month {
+    white-space: nowrap;
+    text-align: center;
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.8vw;
+    color: rgba(255,255,255,1);
+    letter-spacing: -0.2px;
+    position: relative;   /*.........changed ......IMPORTANT......*/
+    
+}
+#Rectangle_51 {
+ 
+    stroke: rgba(112,112,112,1);
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_51{
+    
+    width: 55%;
+    height: 42%;   /*  changed 42 to 56 */
+    background: #F4F4F4;   /* changed from #ffffff */
+    stroke: #707070;
+    stroke-width: 0.5px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+    border-radius: 10px;
+    margin: 15px auto;
+    position: relative;
+}
+
+.Rectangle_52 {
+    background: #101D49;
+    width: 100%;
+	height: 18%;  /*   changed 15 to 18  */
+    position: absolute; 
+    top: 60px;    
+    display: flex;   
+    align-items: center;
+    z-index: 1;   
+
+}
+
+.MARINA_IMAGE {
+    position: relative;   /*  absolute to relative */
+    overflow: visible;
+    width: 289px;
+	height: 321px;
+    z-index: 2;
+    top: 30px;
+    left: 30px;  
+}
+
+.MARINA_NAME {
+    left: 38%;
+    position: relative;  /*   absolute to relative  */
+	overflow: visible;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Work Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.5vw;
+	color: rgba(255,255,255,1);
+	letter-spacing: -0.2px;
+    z-index: 2;   
+}
+.WOMENS_FENCING {
+    left: 38%;
+	top: 120px;
+	position: absolute;
+	overflow: visible;
+	width: 117px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Work Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(216,35,46,1);
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+    z-index: 2;   
+}
+
+.position {
+    left: 38%;
+	position: absolute;
+	overflow: visible;
+	width: 92px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(16,29,73,1);
+    z-index: 2;  
+}
+.epee {
+
+	position: absolute;
+	overflow: visible;
+	width: 92px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	color: #343434;
+    z-index: 2;  
+}
+#Line_1{
+    fill: transparent;
+	stroke: rgba(167,167,167,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_1 {
+    overflow: visible;
+	position: absolute;
+	width: 329.625px;
+	height: 1px;
+	left: 38%;
+	transform: matrix(1,0,0,1,0,0);
+
+}
